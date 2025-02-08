@@ -15,7 +15,7 @@
         <button onclick="changerTexte()" class=" bg-blue-500 rounded-lg p-2 ">changer</button>
     </div>
 
-<!-- 2- compteur de clics:  :  -->
+    <!-- 2- compteur de clics:  :  -->
 
     <div class="grid justify-center">
         <p id="counter" class="ml-4"> 0</p>
@@ -23,7 +23,7 @@
     </div>
 
 
-<!-- 3-Afficher un texte en majuscule :  -->
+    <!-- 3-Afficher un texte en majuscule :  -->
 
     <div class="grid justify-center ">
         <h1>Convertir un texte en majuscules</h1>
@@ -32,7 +32,7 @@
         <p id="outputText"></p>
     </div>
 
-<!-- 4- changer le couleur de background :  -->
+    <!-- 4- changer le couleur de background :  -->
 
     <div class="flex justify-center m-6 ">
         <button class="bg-green-300 rounded-lg" id="vert">vert</button>
@@ -40,7 +40,7 @@
         <button class="bg-blue-300 rounded-lg" id="blue">blue</button>
     </div>
 
-<!-- 5- créer une liste dynamique:-->
+    <!-- 5- créer une liste dynamique:-->
 
     <div class="grid justify-center ">
         <P class="text-3xl">Ajouter des éléments</P>
@@ -50,7 +50,7 @@
         <ul id="itemList"></ul>
     </div>
 
-<!-- 6- Masquer et afficher un élément: -->
+    <!-- 6- Masquer et afficher un élément: -->
 
     <div class="text-center">
         <button onclick="toggleParagraphe()" class="bg-blue-500 text-white rounded-lg my-2"> Afficher/Masquer </button>
@@ -60,11 +60,20 @@
             laborum commodi eius ratione iusto ipsa, fuga perferendis amet accusantium.</p>
     </div>
 
-<!-- 7- Compteur de caractères: :-->
+    <!-- 7- Compteur de caractères: :-->
 
     <div class="text-center">
-        <input type="text" id="charInput" class="px-4 py-2 border rounded-lg" oninput="updateCharCount()" placeholder="Tapez ici...">
+        <input type="text" id="charInput" class="px-4 py-2 border rounded-lg" oninput="updateCharCount()"
+            placeholder="Tapez ici...">
         <p id="charCount" class="mt-2 text-gray-700">Nombre de caractères: 0</p>
+    </div>
+    <!-- 8- changer les images :  -->
+    <div class="text-center">
+        <!-- Image affichée -->
+        <img id="image" src="img/clouds.jpg" alt="Image 1" style="width: 300px; height: auto;">
+        
+        <!-- Bouton pour changer l'image -->
+        <button onclick="changerImage()">Changer l'image</button>
     </div>
 
     <script src="examp.js"></script>

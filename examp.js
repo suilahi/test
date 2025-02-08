@@ -10,9 +10,11 @@ var para = document.getElementById("paragraphe");
 var input = document.getElementById("charInput");
 var cont = document.getElementById("charCount");
 
+var email = document.getElementById("emailInput");
+var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function changerTexte(){
-    document.getElementById("texte").innerText = "Merci!!";
+    document.getElementById("texte").innerText = text.replace("bonjour je suis fiere d'etre avec vous","Merci!!");
 }
 
 button.addEventListener("click", () => {
@@ -52,4 +54,20 @@ function toggleParagraphe() {
 
 function updateCharCount() {
     cont.textContent = "Nombre de caractères:" +input.value.length;
+}
+
+function validateEmail() {
+    if (emailPattern.test(email)) {
+        alert("valide")       
+    } else {
+        alert("Email invalide") 
+    }
+}
+
+var images = ["img/sunset-.png", "img/sun.png", "img/clouds.jpg"];
+var index = 0; 
+
+function changerImage() {
+    index = (index + 1) % images.length;
+    document.getElementById("image").src = images[index];
 }
