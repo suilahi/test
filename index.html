@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- 1- changer le texte dun paragraphe :  -->
+    <div class="grid justify-center">
+        <p id="texte" text-lg>bonjour je suis fiere d'etre avec vous</p>
+        <button onclick="changerTexte()" class=" bg-blue-500 rounded-lg p-2 ">changer</button>
+    </div>
+
+<!-- 2- compteur de clics:  :  -->
+
+    <div class="grid justify-center">
+        <p id="counter" class="ml-4"> 0</p>
+        <button id="btn" class="bg-blue-500 rounded-lg p-2 mr-2">click!</button>
+    </div>
+
+
+<!-- 3-Afficher un texte en majuscule :  -->
+
+    <div class="grid justify-center ">
+        <h1>Convertir un texte en majuscules</h1>
+        <input class=" rounded-lg m-2" type="text" id="user" placeholder="Entrez un texte">
+        <button onclick="convertToUppercase()" class="bg-blue-500 rounded-lg">Afficher en majuscules</button>
+        <p id="outputText"></p>
+    </div>
+
+<!-- 4- changer le couleur de background :  -->
+
+    <div class="flex justify-center m-6 ">
+        <button class="bg-green-300 rounded-lg" id="vert">vert</button>
+        <button class="bg-red-300 rounded-lg mx-6" id="rouge">rouge</button>
+        <button class="bg-blue-300 rounded-lg" id="blue">blue</button>
+    </div>
+
+<!-- 5- créer une liste dynamique:-->
+
+    <div class="grid justify-center ">
+        <P class="text-3xl">Ajouter des éléments</P>
+        <input class="my-2" type="text" id="Input" placeholder="Entrez un élément">
+        <button class="bg-blue-500 rounded-lg" onclick="addItem()">Ajouter</button>
+
+        <ul id="itemList"></ul>
+    </div>
+
+<!-- 6- Masquer et afficher un élément: -->
+
+    <div class="text-center">
+        <button onclick="toggleParagraphe()" class="bg-blue-500 text-white rounded-lg my-2"> Afficher/Masquer </button>
+
+        <p id="paragraphe" class="mt-4 hidden text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laboriosam dignissimos quod sunt perferendis, odit repellat ullam! Corporis dicta harum reprehenderit
+            laborum commodi eius ratione iusto ipsa, fuga perferendis amet accusantium.</p>
+    </div>
+
+<!-- 7- Compteur de caractères: :-->
+
+    <div class="text-center">
+        <input type="text" id="charInput" class="px-4 py-2 border rounded-lg" oninput="updateCharCount()" placeholder="Tapez ici...">
+        <p id="charCount" class="mt-2 text-gray-700">Nombre de caractères: 0</p>
+    </div>
+
+    <script src="examp.js"></script>
+</body>
+
+</html>
